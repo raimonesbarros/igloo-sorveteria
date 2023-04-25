@@ -75,7 +75,7 @@ section{
   margin: 0 auto;
 }
 
-button{cursor: pointer;}
+button, .pointer{cursor: pointer;}
 
 .top{margin: 1rem 0;}
 
@@ -119,8 +119,11 @@ header{
 #nome{width: 0; overflow: hidden;}
 
 .navbar{
-  background-image: linear-gradient(to right, var(--principal), var(--fraca));
   width: 70%;
+}
+
+.nav-list{
+  background-image: linear-gradient(to right, var(--principal), var(--fraca));
   padding-bottom: .3rem;
   border-radius: 50px 0 0 50px;
 }
@@ -414,17 +417,40 @@ footer a{
 }
 
 @media screen and (width<=768px) {
-  .navbar{display: none;}
+  header{
+    position: relative;
+  }
+
+  .navbar{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: var(--header);
+  }
+  
+  .nav-list{
+    flex-direction: column;
+    border-radius: 0;
+    width: 100%;
+    padding: .5rem 0;
+  }
+  
+  .nav-item{
+    width: 100%;
+    padding: .2rem 0;
+  }
   
   .btn-menu{margin: 0 1rem;}
 
   .escope{
     flex-direction: column-reverse;
-    padding-top: var(--header);
   }
+
+  #vitrine .slide{width: 60%;}
 
   #vitrine .text{
     width: 100%;
+    font-size: 1.5rem;
   }
 
   #onde .content img{width: 40%;}
@@ -433,6 +459,8 @@ footer a{
 }
 
 @media screen and (width<=425px) {
+  #vitrine .slide{width: 80%;}
+
   #onde .content{
     flex-direction: column-reverse;
     align-items: center;
