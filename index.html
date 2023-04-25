@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style/general.css">
 </head>
 <body>
-  <header>
+  <header class="shadow">
     <div class="header flex between a-center">
       <img id="logo" src="img/logo150.png" alt="Logomarca igloo">
       <h1 id="nome">Igloo Sorveteria</h1>
@@ -19,9 +19,13 @@
           <a class="nav-item" href="#">Produtos</a>
           <a class="nav-item" href="#">Onde tem?</a>
           <a class="nav-item" href="#">Premia</a>
-          <a class="nav-item" href="#">Contatos</a>
+          <a class="nav-item" href="#">Contato</a>
         </ul>
       </nav>
+      <div class="btn-menu">
+        <img src="https://icongr.am/entypo/menu.svg?size=50&color=FEA3AC" alt="Abrir menu">
+        <img class="disable" src="https://icongr.am/jam/close.svg?size=60&color=FEA3AC" alt="Fechar menu">
+      </div>
     </div>
   </header>
   <main>
@@ -29,7 +33,7 @@
       <div class="content">
         <img class="bg-vitrine" src="img/fundo.jpg">
         <div class="escope flex evenly a-center">  
-          <h2 class="text">Para cada momento da sua vida <br> uma opção!</h2>
+          <h2 class="text">Para cada momento <br> da sua vida, uma opção!</h2>
           <div class="slide">
             <img class="option" src="img/picole.png">
             <img class="option disable" src="img/casquinha.png">
@@ -44,7 +48,7 @@
       <div class="container">
         <div class="top">
           <h2 class="title">EXPERIMENTE</h2>
-          <p class="subtitle">Refrescância em vários sabores</p>
+          <p class="subtitle">Refrescância em várias formas e sabores</p>
         </div>
         <div class="cards flex j-center a-center wrap">
           <div class="card">
@@ -99,7 +103,7 @@
         <div class="top">
           <h2 class="title">IGLOO PREMIA</h2>
           <p class="subtitle">Vantagens de ser cliente</p>
-          <div class="promos">
+          <div class="promos flex">
             <button class="current">Você Merece Açaí!</button>
             <button>Publi prêmio</button>
             <button>Pontua</button>
@@ -125,7 +129,7 @@
           </div>
 
           <div class="promo p3 flex around a-center">
-            <div class="topo flex around a-center">
+            <div class="topo flex between a-center">
               <form>
                 <h2>Meus Pontos:</h2>
                 <label for="telefone">N° Celular</label><br>
@@ -210,16 +214,20 @@
           </a>
           <a class="email">
             <img src="img/gmail.png">
-            <h2>igloosorveteria@gmail.com</h2>
+            <h2>igloosorveteria</h2>
           </a>
         </div>
         <img src="img/modelo.png">
       </div>
     </section>
   </main>
-  <footer class="flex column j-center a-center">
+  <footer class="flex column j-center a-center shadow">
     <div class="copy flex j-center a-center">
-      <img src="img/logo150.png">2022 - 2023 &copy; copyright | todos os direitos reservados</div>
+      <img src="img/logo150.png">2022 - 2023 &copy; copyright | todos os direitos reservados
+    </div>
+    <a href="#vitrine">
+      <img class="back" src="https://icongr.am/fontawesome/arrow-circle-up.svg?size=40&color=FEA3AC" alt="ir para o topo">
+    </a>
   </footer>
 </body>
 </html>
