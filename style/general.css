@@ -269,6 +269,7 @@ header{
   background-color: #2f5cee;
   border-radius: 20px;
   border: transparent;
+  margin: 0 .1rem;
   padding: .2rem 1rem .4rem;
 }
 
