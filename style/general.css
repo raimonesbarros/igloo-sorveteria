@@ -20,6 +20,8 @@
   --principal: #FEA3AC;
   --fraca: #ffbdc2;
   --forte: #A65A62;
+  --bg: #31043F;
+  --color: #FFB900;
   --maximo: 1200px;
   --header: 75px;
 }
@@ -99,7 +101,7 @@ button, .pointer{cursor: pointer;}
 }
 
 .shadow{
-  background-color: #ffffff;
+  background-color: var(--bg);
   box-shadow: 0 0 5px #00000060;
 }
 
@@ -141,7 +143,7 @@ header{
 
 /* Vitrine */
 #vitrine{
-  background-color: #ecebe1;
+  background-color: #ddd1be;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -188,11 +190,12 @@ header{
 
 /* Produtos */
 #produtos{
-  background-color: #ffc6df;
+  background-color: #31043fe1;
+  /* background-color: #ffc6df; */
 }
 
 #produtos .title, #produtos .subtitle{
-  color: #0002FF;
+  color: #eeeeeed8;
 }
 
 #produtos .cards{
@@ -209,7 +212,7 @@ header{
   margin: 1rem;
   padding: 2rem 0;
   border-radius: 10px;
-  box-shadow: inset 0 0 5px #0002FF;
+  box-shadow: inset 0 0 5px var(--principal);
 }
 
 #produtos .card-img{
@@ -218,22 +221,24 @@ header{
 }
 
 #produtos .card-title{
-  color: #0002FF;
+  color: #eeeeeed8;;
   font-size: 1.5rem;
   text-align: center;
 }
 
 #produtos .botton{
-  color: #0002FF;
+  color: #eeeeeed8;
 }
 
 /* Onde */
 #onde{
-  background-color: #D6F8FF;
+  /* background-color: #D6F8FF; */
+  background-color: #EEEEEE;
 }
 
 #onde .title, #onde .subtitle{
-  color: #0F4505;
+  /* color: #0F4505; */
+  color: #5B0675;
 }
 
 #onde .mapa{width: 100%;}
@@ -242,44 +247,49 @@ header{
   padding: .3rem;
   border-radius: 20px;
   width: 100%;
-  box-shadow: inset 0 0 3px #00000050;
+  box-shadow: inset 0 0 5px #5B067570;
 }
 
 #onde .content img{width: 25%;}
 
 #onde .botton{
-  color: #0F4505;
+  color: #5B0675;
 }
 
 /* Premia */
 #premia{
-  background-color: #ccb0bc;
+  /* background-color: #ccb0bc; */
+  background-color: #31043fe1;
+  color: #EEEEEE;
 }
 
 #premia .title, #premia .subtitle{
-  color: #000050;
+  /* color: #000050; */
+  color: var(--color);
 }
 
 #premia .botton{
-  color: #000050;
+  /* color: #000050; */
+  color: var(--color);
 }
 
 #premia .promos{margin: 1rem 0;}
 
 #premia button{
   font-family:  'K2D', sans-serif;
-  color: #fff;
-  background-color: #2f5cee;
+  color: var(--bg);
+  /* background-color: #2f5cee; */
+  background-color: var(--principal);
   border-radius: 20px;
   border: transparent;
   margin: 0 .1rem;
-  padding: .2rem 1rem .4rem;
+  padding: 0 1rem .2rem;
 }
 
 #premia .current{
   background-color: transparent;
-  border: #2f5cee 2px solid;
-  color: #2f5cee;
+  border: var(--principal) 2px solid;
+  color: var(--principal);
 }
 
 #premia .promo img{
@@ -298,9 +308,20 @@ header{
   padding: .2rem .5rem;
 }
 
+#premia .info{
+  text-align: center;
+  margin: 1rem 0;
+  color: var(--color);
+}
+
+#premia .info h1{
+  font-size: 2rem;
+  color: var(--principal);
+}
+
 #premia .topo{
   width: 100%;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 #premia form{
@@ -309,13 +330,13 @@ header{
 }
 
 #premia #telefone{
-  background-color: #ffffff90;
+  background-color: #ffffff;
   text-align: center;
   width: 60%;
   padding: .3rem;
   margin: .5rem;
   border-radius: 5px;
-  border: .1px solid #777;
+  border: .1px solid #777777;
 }
 
 #premia .ranking{padding: 0 2rem;}
@@ -333,17 +354,10 @@ header{
   width: 30px;
 }
 
-#premia .info{
-  text-align: center;
-  margin: 1rem 0;
-}
-
-#premia .info h1{font-size: 2rem;}
-
 #premia .cards{
   text-align: center;
-  width: 100%;
-  margin: 1rem 0;
+  width: 80%;
+  margin: auto;
 }
 
 #premia .card{
@@ -363,8 +377,8 @@ header{
 }
 /* Contatos */
 #contatos{
-  background-color: #ccc9a9;
-  color: #2f5beec5;
+  background-color: #ddd1be;
+  color: var(--forte);
 }
 
 #contatos img{
@@ -387,7 +401,7 @@ header{
 footer{
   position: relative;
   background-color: #fff;
-  color: #000;
+  color: #EEE;
   padding: 1rem;
 }
 
@@ -417,7 +431,7 @@ footer a{
 }
 
 @media screen and (width<=768px) {
-  header{
+  .header{
     position: relative;
   }
 
@@ -446,7 +460,9 @@ footer a{
     flex-direction: column-reverse;
   }
 
-  #vitrine .slide{width: 60%;}
+  #vitrine .slide{
+    margin-top: calc(var(--header) / 2);
+    width: 60%;}
 
   #vitrine .text{
     width: 100%;
@@ -458,7 +474,7 @@ footer a{
   #onde .mapa{width: 60%;}
 }
 
-@media screen and (width<=425px) {
+@media screen and (width<=525px) {
   #vitrine .slide{width: 80%;}
 
   #onde .content{
