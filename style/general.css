@@ -452,6 +452,7 @@ main{
 }
 
 #contatos a p{
+  color: var(--forte);
   font-weight: bold;
 }
 
