@@ -223,9 +223,9 @@ main{
 }
 
 #vitrine .option{
-  /* transform: translateX(100%); */
+  transform: translateX(100%);
   width: 100%;
-  /* animation: animar 2s ease forwards; */
+  animation: animar 1.5s ease forwards;
 }
 
 /* Produtos */
