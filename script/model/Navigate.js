@@ -1,14 +1,12 @@
-class  Navigate{
-  constructor(){
+const btn_menu = document.querySelectorAll('.menu_mobile')
+btn_menu.forEach(img=>{
+  img.addEventListener('click', ()=>new Navigate().btnMenu())
+})
 
-  }
 
-  btnMenu(btn_menu){
+
+function Navigate(){
+  this.btnMenu = function(){
     btn_menu.forEach(el=>el.classList.toggle('disable'))
   }
 }
-
-const btn_menu = document.querySelectorAll('.btn-menu img')
-btn_menu.forEach(img=>{
-  img.addEventListener('click', ()=>new Navigate().btnMenu(btn_menu))
-})

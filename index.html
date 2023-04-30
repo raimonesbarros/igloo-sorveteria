@@ -13,18 +13,26 @@
     <div class="header flex between a-center">
       <img id="logo" src="img/logo150.png" alt="Logomarca igloo">
       <h1 id="nome">Igloo Sorveteria</h1>
-      <nav class="navbar">
+      <nav class="navbar menu_mobile disable">
         <ul class="nav-list flex around a-center">
-          <a class="nav-item" href="#">Inicio</a>
-          <a class="nav-item" href="#">Produtos</a>
-          <a class="nav-item" href="#">Onde tem?</a>
-          <a class="nav-item" href="#">Premia</a>
-          <a class="nav-item" href="#">Contato</a>
+          <a class="nav-item" href="#vitrine">Inicio</a>
+          <a class="nav-item" href="#produtos">Produtos</a>
+          <a class="nav-item" href="#onde">Onde tem?</a>
+          <a class="nav-item" href="#premia">Premia</a>
+          <a class="nav-item" href="#contatos">Contato</a>
+          <li class=" nav-item socials">
+            <a href="https://wa.link/jvz9qo">
+              <img src="img/whats-w.png" alt="icone whatsapp">
+            </a>
+            <a href="https://www.instagram.com/igloosorveteria/">
+              <img src="img/insta-w.png" alt="icone instagram">
+            </a>
+          </li>
         </ul>
       </nav>
       <div class="btn-menu">
-        <img class="open" src="https://icongr.am/entypo/menu.svg?size=50&color=FEA3AC" alt="Abrir menu">
-        <img class="close disable" src="https://icongr.am/jam/close.svg?size=60&color=FEA3AC" alt="Fechar menu">
+        <img class="open menu_mobile" src="https://icongr.am/entypo/menu.svg?size=50&color=FEA3AC" alt="Abrir menu">
+        <img class="close menu_mobile disable" src="https://icongr.am/jam/close.svg?size=60&color=FEA3AC" alt="Fechar menu">
       </div>
     </div>
   </header>
@@ -35,7 +43,7 @@
         <div class="escope flex evenly a-center">  
           <h2 class="text">Para cada momento <br> da sua vida, uma opção!</h2>
           <div class="slide">
-            <img class="option" src="img/picole.png">
+            <img class="option disable" src="img/picole.png">
             <img class="option disable" src="img/casquinha.png">
             <img class="option disable" src="img/sorvete.png">
             <img class="option disable" src="img/acai.png">
@@ -46,26 +54,26 @@
 
     <section id="produtos">
       <div class="container">
-        <div class="top">
+        <div class="top" data-anime="botton">
           <h2 class="title">EXPERIMENTE</h2>
           <p class="subtitle">Refrescância em várias formas e sabores</p>
         </div>
         <div class="cards flex j-center a-center wrap">
-          <div class="card">
+          <div class="card" data-anime="left">
             <img class="card-img" src="img/picole.png">
-            <h1 class="card-title">Picolé</h1>
+            <h3 class="card-title">Picolé</h3>
           </div>
-          <div class="card">
+          <div class="card" data-anime="right">
             <img class="card-img" src="img/casquinha.png">
-            <h1 class="card-title">Casquinha</h1>
+            <h3 class="card-title">Casquinha</h3>
           </div>
-          <div class="card">
+          <div class="card" data-anime="left">
             <img class="card-img" src="img/sorvete.png">
-            <h1 class="card-title">Sorvete</h1>
+            <h3 class="card-title">Sorvete</h3>
           </div>
-          <div class="card">
+          <div class="card" data-anime="right">
             <img class="card-img" src="img/acai.png">
-            <h1 class="card-title">Açaí</h1>
+            <h3 class="card-title">Açaí</h3>
           </div>
         </div>
         <p class="botton">Cada um melhor que o outro!</p>
@@ -74,12 +82,13 @@
 
     <section id="onde">
       <div class="container">
-        <div class="top">
+        <div class="top" data-anime="botton">
           <h2 class="title">MAPA DO TESOURO</h2>
           <p class="subtitle">Encontre um baú de refrescância</p>
         </div>
         <div class="content flex between">
-          <div class="mapa">
+          <div class="mapa" data-anime="left">
+            <img src="img/fachada.jpg" alt="fachada da loja">
             <div class="mapouter">
               <div class="gmap_canvas">
                 <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Avenida%20Bernardo%20Say%C3%A3o,%20centro,%20Goiatins-TO&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -92,7 +101,7 @@
               </div>
             </div>
           </div>
-          <img src="img/fachada.jpg" alt="fachada da loja">
+          <img src="img/fachada.jpg" alt="fachada da loja" data-anime="right">
         </div>
         <p class="botton"> Siga estas coordenadas e encontrarás um tesouro repleto de sabor!</p>
       </div>
@@ -100,136 +109,148 @@
 
     <section id="premia">
       <div class="container">
-        <div class="top">
+        <div class="top" data-anime="botton">
           <h2 class="title">IGLOO PREMIA</h2>
           <p class="subtitle">Vantagens de ser cliente</p>
-          <div class="promos flex">
+          <div class="promos flex j-center a-center">
             <button class="current">Você Merece Açaí!</button>
-            <button>Publi prêmio</button>
-            <button>Pontua</button>
+            <button class="disable">Publi prêmio</button>
+            <button class="disable">Pontua</button>
           </div>
         </div>
+
         <div class="content">
-          <div class="promo p1 flex column around a-center disable">
-            <img src="img/voce-merece.jpg" >
-            <a href="https://www.instagram.com/p/CrHQ4XwOT4g/?utm_source=ig_web_copy_link"><button>Participar</button></a>
+          <div class="promo p1 flex column around a-center">
+            <img src="img/voce-merece.jpg"  data-anime="botton">
+            <a href="https://www.instagram.com/p/CrHQ4XwOT4g/?utm_source=ig_web_copy_link"><button disabled>Participar</button></a>
             <div class="regulamento flex column a-center">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis ipsa reiciendis. Accusamus minima cumque dolorum veritatis doloribus? Harum amet tempore quibusdam officiis vitae ipsa hic doloremque cum nihil soluta?
-              </p>
+              <p>Promoção encerrada em 25 de abril de 2023, vencedores @naylanesoares9 e @nagillasoarez</p>
+              <p>Agradecemos a participação de todos!</p>
             </div>
           </div>
 
           <div class="promo p2 flex column around a-center disable">
-            <img src="img/voce-merece.jpg" >
+            <img src="img/voce-merece.jpg" data-anime="botton">
             <a href="https://www.instagram.com/p/CrHQ4XwOT4g/?utm_source=ig_web_copy_link"><button>Participar</button></a>
             <div class="regulamento flex column a-center">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis ipsa reiciendis. Accusamus minima cumque dolorum veritatis doloribus? Harum amet tempore quibusdam officiis vitae ipsa hic doloremque cum nihil soluta?
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis ipsa reiciendis.
               </p>
             </div>
           </div>
 
-          <div class="promo p3 flex column a-center">
-            <div class="info">
-              <h2>Você possui:</h2>
-              <h1>0</h1>
-              <h2>Ponto(s)</h2>
+          <div class="promo p3 flex column a-center disable">
+            <div class="info disable">
+              <P>Você possui:</p>
+              <h3>0</h3>
+              <p>Ponto(s)</p>
             </div>
             <div class="topo flex evenly a-center">
-              <form>
-                <h2>Meus Pontos:</h2>
-                <label for="telefone">N° Celular</label><br>
-                <input
-                  type="tel"
-                  name="telefone"
-                  id="telefone"
-                  placeholder="63999999999"
-                ><br>
-                <button>Conferir</button>
+              <form  data-anime="left">
+                <fieldset>
+                  <legend>Meus Pontos:</legend>
+                  <label for="telefone">N° Celular</label><br>
+                  <input
+                    type="tel"
+                    name="telefone"
+                    id="telefone"
+                    placeholder="63999999999"
+                  ><br>
+                  <button>Conferir</button>
+                </fieldset>
               </form>
-              <div class="ranking">
-                <h1>Ranking de Pontos</h1>
-                <h2>
+              <div class="ranking" data-anime="right">
+                <h3>Ranking de Pontos</h3>
+                <p>
                   <span>
                     <img src="img/taca-de-ouro.png">
                   </span>
                   <span>1°</span> Fulano
-                </h2>
-                <h2>
+                </p>
+                <p>
                   <span>
                     <img src="img/taca-de-prata.png">
                   </span>
                   <span>2°</span> Ciclano
-                </h2>
-                <h2>
+                </p>
+                <p>
                   <span>
                     <img src="img/taca-de-bronze.png">
                   </span>
                   <span>3°</span> Beltrano
-                </h2>
+                </p>
               </div>
             </div>
           </div>
+
         </div>
-        <div class="premios">
+
+        <div class="premios disable" data-anime="botton">
           <div class="cards flex j-center a-center">
             <div class="card">
               <img src="img/picole.png" alt="">
-              <h2>Descrição</h2>
-              <h1>5 pts</h1>
+              <p>Descrição</p>
+              <p>5 pts</p>
             </div>
             <div class="card">
               <img src="img/picole.png" alt="">
-              <h2>Descrição</h2>
-              <h1>5 pts</h1>
+              <p>Descrição</p>
+              <p>5 pts</p>
             </div>
             <div class="card">
               <img src="img/picole.png" alt="">
-              <h2>Descrição</h2>
-              <h1>5 pts</h1>
+              <p>Descrição</p>
+              <p>5 pts</p>
             </div>
             <div class="card">
               <img src="img/picole.png" alt="">
-              <h2>Descrição</h2>
-              <h1>5 pts</h1>
+              <p>Descrição</p>
+              <p>5 pts</p>
             </div>
           </div>
-          <div class="regulamento">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In tempore sequi quos sit a sunt incidunt quaerat cumque, enim quo iste possimus dolore, minus aliquam qui, nobis nihil delectus exercitationem.</p>
+
+          <div class="regulamento" data-anime="botton">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
+
         </div>
+
         <p class="botton">Participe, você só tem a ganhar!</p>
+
       </div>
     </section>
 
     <section id="contatos">
       <div class="content flex between a-center">
         <div class="contato">
-          <a class="whats">
+          <a class="whats" data-anime="botton">
             <img src="img/whatsapp.png">
-            <h2>(63) 9 9114-9030</h2>
+            <p>(63) 9 9114-9030</p>
           </a>
-          <a class="insta">
+          <a class="insta" data-anime="botton">
             <img src="img/instagram.png">
-            <h2>@igloosorveteria</h2>
+            <p>@igloosorveteria</p>
           </a>
-          <a class="email">
+          <a class="email" data-anime="botton">
             <img src="img/gmail.png">
-            <h2>igloosorveteria</h2>
+            <p>igloosorveteria</p>
           </a>
         </div>
-        <img src="img/modelo.png">
+        <img src="img/modelo.png" data-anime="right">
       </div>
     </section>
   </main>
+
   <footer class="flex column j-center a-center shadow">
     <div class="copy flex j-center a-center">
       <img src="img/logo150.png">2022 - 2023 &copy; copyright | todos os direitos reservados
     </div>
     <a href="#vitrine">
-      <img class="back" src="https://icongr.am/fontawesome/arrow-circle-up.svg?size=40&color=FEA3AC" alt="ir para o topo">
+      <img class="back" src="https://icongr.am/fontawesome/arrow-circle-up.svg?size=50&color=FEA3AC" alt="ir para o topo">
     </a>
   </footer>
 
+  <script src="script/main.js"></script>
+  <script src="script/model/scroll.js"></script>
   <script src="script/model/Navigate.js"></script>
 </body>
 </html>
